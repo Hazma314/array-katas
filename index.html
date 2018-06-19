@@ -1,0 +1,59 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <h2 id=kata1>Filler Text</h2>
+        <h2 id=kata2>Filler text</h2>
+        <h2 id=kata3>Filler text</h2>
+        <h2 id=kata4>Filler</h2>
+        <h2 id=kata55>Filler</h2>
+        <h2 id=kata6>Filler</h2>
+        <h2 id=kata77>Filler</h2>
+        <h2 id=kata88>filler</h2>
+        <h2 id=kata99>filler</h2>
+        <h2 id=kata1010>filler</h2>
+        <script>
+            const gotCitiesCSV = ["King's Landing","Braavos","Volantis","Old Valyria","Free Cities","Qarth","Meereen"];
+            const lotrCitiesArray = ["Mordor","Gondor","Rohan","Beleriand","Mirkwood","Dead Marshes","Rhun","Harad"];
+            const bestThing = "The best thing about a boolean is even if you are wrong you are only off by a bit";
+            
+            //1
+            kata1.textContent = JSON.stringify(gotCitiesCSV);
+            //2
+            kata2.textContent = JSON.stringify(bestThing.split(' '));
+            //3
+            kata3.textContent = JSON.stringify(gotCitiesCSV.join(";"));
+            //4
+            kata4.textContent = JSON.stringify(lotrCitiesArray);
+            //5
+            let kata5 =[];
+            for (i=3; i<lotrCitiesArray.length; i++){
+                kata5.push(lotrCitiesArray[i]);
+            }
+            kata55.textContent = JSON.stringify(kata5);
+            //6
+            lotrCitiesArray.splice(2,1);
+            kata6.textContent = JSON.stringify(lotrCitiesArray);
+            //7
+            var kata7 = bestThing.slice(23,38);
+            kata77.textContent = JSON.stringify(kata7);
+            //8
+            var kata8 = bestThing.indexOf("only");
+            kata88.textContent = JSON.stringify(kata8);
+            //9
+            let kata9 =[];
+            for (i = 0; i<gotCitiesCSV.length; i++) {
+                if (gotCitiesCSV[i].includes("aa") || gotCitiesCSV[i].includes("ee") || gotCitiesCSV[i].includes("ii") || gotCitiesCSV[i].includes("oo") || gotCitiesCSV[i].includes("uu")){
+                kata9.push(gotCitiesCSV[i]);
+                }
+            }
+            kata99.textContent = JSON.stringify(kata9);
+            //10
+            var kata10 = lotrCitiesArray.sort();
+            kata1010.textContent = JSON.stringify(kata10);
+        </script>
+        
+    </body>
+</html>
